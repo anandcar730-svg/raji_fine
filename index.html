@@ -73,7 +73,35 @@ footer{background:#111;color:white;text-align:center;padding:15px;}
   from{transform:scale(0.7);}
   to{transform:scale(1);}
 }
+.affiliations{
+    padding:80px 20px;
+    background:#f8f9fa;
+    text-align:center;
+}
 
+.affiliation-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.affiliation-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.affiliation-card:hover{
+    transform:translateY(-8px);
+}
+
+.affiliation-card img{
+    height:80px;
+    margin-bottom:15px;
+}
 .close{
   position:absolute;
   top:20px;
@@ -221,7 +249,32 @@ We help students transform creativity into a professional career through practic
 <img src="./img8.jpeg" onclick="openModal(this.src)">
 <img src="./img9.jpeg" onclick="openModal(this.src)">
 </div>
+<section class="affiliations">
+    <div class="container">
+        <h2>Affiliated With</h2>
+        <p>Our church is affiliated with and recognized by the following organizations.</p>
 
+        <div class="affiliation-grid">
+            <div class="affiliation-card">
+                <img src="images/organization1.png" alt="Organization Logo">
+                <h3>Organization Name</h3>
+                <p>Registered Member</p>
+            </div>
+
+            <div class="affiliation-card">
+                <img src="images/organization2.png" alt="Organization Logo">
+                <h3>Organization Name</h3>
+                <p>Accredited Ministry</p>
+            </div>
+
+            <div class="affiliation-card">
+                <img src="img1.png" alt="Organization Logo">
+                <h3></h3>
+                <p>Certified Partner</p>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- REVIEWS -->
 <section class="section">
 <h2>Reviews</h2>
